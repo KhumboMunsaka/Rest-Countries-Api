@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="intro">
+        Enter a country whose information you'd like to know about? 😀
+      </h1>
+      <form class="form">
+        <input type="text" placeholder="Put your country in here!" id="input" />
+
+        <button id="search-btn" type="submit">Press this button!</button>
+      </form>
+      <div class="country-information invisible">
+        <div class="images">
+          <img src="" id="flag" />
+          <img src="" id="coat-of-arms" />
+        </div>
+        <div id="country-details">
+          <div class="word-details">
+            <h3 id="capitals">Capital(s):</h3>
+            <h3 id="population">Population:</h3>
+            <h3 id="currency">Currency(s):</h3>
+            <h3 id="time-zone">Time Zone(s):</h3>
+            <h3 id="unMember">UnMember:</h3>
+            <h3 id="languages">languages:</h3>
+          </div>
+        </div>
+      </div>
+      <h3 class="error"></h3>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
