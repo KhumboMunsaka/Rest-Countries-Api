@@ -31,7 +31,6 @@ form.addEventListener("submit", function (e) {
       // getting the country information
       const response = await fetch(finalUrl);
       const json = await response.json();
-      console.log(json[0]);
       if (!response.ok) {
         errorEl.textContent = `Maybe you have bad network ~_~`;
         throw new Error("Failed to fetch country data", error);
@@ -62,10 +61,10 @@ form.addEventListener("submit", function (e) {
         countryInformation.classList.toggle("invisible");
         countryInformation.classList.toggle("visible");
         errorEl.classList.add("invisible");
-        errorEl.classList.remove("invisible");
+        errorEl.classList.remove("visible");
       }
     } catch (error) {
-      errorEl.textContent = `Not Sure that Country Exists (。﹏。*)`;
+      errorEl.textContent = `Not Sure that Country Exists (。﹏。*) Try it's formal name perhaps👻`;
     }
   }
 
