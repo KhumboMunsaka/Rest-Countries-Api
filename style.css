@@ -78,3 +78,13 @@ body {
 .intro {
   text-align: center;
 }
+@media only screen and (max-width: 800px) {
+  .form,
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+  .images {
+    align-items: start;
+  }
+}
